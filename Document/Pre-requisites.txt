@@ -1,0 +1,61 @@
+Pre-requisites
+
+Before developing and running the OptiCrop – Smart Agricultural Production Optimization Engine, it is essential to ensure that the required software, development tools, libraries, and basic technical knowledge are available. These prerequisites provide a stable development environment, support machine learning model development, and enable the deployment of the web-based application.
+
+Hardware Requirements
+Computer/Laptop with a minimum of 4 GB RAM (8 GB recommended)
+At least 10 GB of free disk space
+Stable internet connection
+
+Software Requirements
+Python 3.10 or later
+Visual Studio Code (VS Code) or another Python IDE
+Git for version control
+Jupyter Notebook for data analysis and model training
+A modern web browser (Google Chrome, Microsoft Edge, or Mozilla Firefox)
+
+Required Python Libraries
+Flask
+Scikit-learn
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Pickle (built-in Python module)
+Jupyter Notebook
+
+Front-End Technologies
+HTML5
+CSS3
+Bootstrap 5
+JavaScript (optional)
+
+Database (Optional)
+CSV dataset for machine learning
+MySQL or SQLite (if storing farmer and recommendation data)
+
+Development Tools
+Virtual Environment (venv)
+Git
+GitHub (optional)
+
+Basic Knowledge Required
+Python Programming
+Machine Learning fundamentals
+Data preprocessing using Pandas and NumPy
+Flask web framework
+HTML, CSS, and Bootstrap
+Basic SQL concepts (optional)
+Git and version control
+
+Dataset Requirements
+The crop recommendation dataset should include the following attributes:
+Nitrogen (N)
+Phosphorous (P)
+Potassium (K)
+Temperature
+Humidity
+pH
+Rainfall
+Crop Name (Target Variable)
+These pre-requisites ensure that the OptiCrop project can be developed, trained, tested, and deployed efficiently with minimal compatibility and configuration issues.
