@@ -1,0 +1,19 @@
+body{
+    background:#f4f7f5;
+}
+
+.card{
+    border-radius:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+h2{
+    font-weight:700;
+}
+
+.btn-success{
+    font-size:18px;
+}

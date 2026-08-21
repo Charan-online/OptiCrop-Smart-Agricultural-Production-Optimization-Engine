@@ -1,0 +1,2 @@
+with open("model/label_encoder.pkl", "wb") as f:
+    pickle.dump(encoder, f)
