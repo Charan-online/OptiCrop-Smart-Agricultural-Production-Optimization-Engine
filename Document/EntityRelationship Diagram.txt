@@ -1,0 +1,74 @@
+Entity Relationship Diagram
+
+                         FARMER
++------------------------------------------------+
+| PK Farmer_ID                                   |
+| Name                                           |
+| Phone                                          |
+| Email                                          |
+| Address                                        |
++------------------------------------------------+
+                 1
+                 |
+                 | Owns
+                 |
+                 M
+                         FIELD
++------------------------------------------------+
+| PK Field_ID                                    |
+| FK Farmer_ID                                   |
+| Field_Name                                     |
+| Location                                       |
+| Area                                           |
++------------------------------------------------+
+                 1
+                 |
+                 | Contains
+                 |
+                 M
+                     SOIL_DATA
++------------------------------------------------+
+| PK Soil_ID                                     |
+| FK Field_ID                                    |
+| Nitrogen                                       |
+| Phosphorous                                    |
+| Potassium                                      |
+| Temperature                                    |
+| Humidity                                       |
+| pH                                             |
+| Rainfall                                       |
++------------------------------------------------+
+                 1
+                 |
+                 | Generates
+                 |
+                 M
+                  RECOMMENDATION
++------------------------------------------------+
+| PK Recommendation_ID                           |
+| FK Soil_ID                                     |
+| FK Crop_ID                                     |
+| Predicted_Yield                                |
+| Fertilizer_Recommendation                      |
+| Irrigation_Advice                              |
+| Recommendation_Date                            |
++------------------------------------------------+
+                 ^
+                 |
+                 | Recommended Crop
+                 |
+                 | M : 1
+                 |
+                         CROP
++------------------------------------------------+
+| PK Crop_ID                                     |
+| Crop_Name                                      |
+| Season                                         |
+| Water_Requirement                              |
+| Fertilizer_Requirement                         |
++------------------------------------------------+
+
+| Abbreviation | Full Form       | Purpose                                                                                |
+| ------------ | --------------- | -------------------------------------------------------------------------------------- |
+| **PK**       | **Primary Key** | Uniquely identifies each record in a table.                                            |
+| **FK**       | **Foreign Key** | References the Primary Key of another table to establish relationships between tables. |
